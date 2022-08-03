@@ -16,6 +16,7 @@ img[100:150, 100:150] = [255, 255, 255]
 
 levi_face = img[400:700, 150:450]
 img[0:300, 0:300] = levi_face
+
 cv2.imshow('image', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
