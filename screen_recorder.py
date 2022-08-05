@@ -4,7 +4,7 @@ import cv2
 from PIL import ImageGrab
 
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter("output.avi", fourcc, 5.0, (1366,768))
+out = cv2.VideoWriter("output.avi", fourcc, 20.0, (1366,768))
 
 while True:
     img = ImageGrab.grab()
@@ -20,4 +20,3 @@ while True:
 
 out.release()
 cv2.destroyAllWindows()
- 
